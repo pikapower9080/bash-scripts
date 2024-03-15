@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Kill any processes running on a port
+
+# Check if port number is provided as an argument
+if [[ $# -eq 0 ]]; then
+    echo "Usage: $0 <port>"
+    exit 1
+fi
+
+# Get the port number from the command-line argument
+port=$1
+
+# Find the process running on the specified port
+pid=$(lsof -i :$port -t)
+
+if [[ -n $pid ]]; then
+    echo "A process with PID $pid is running on port $port."
+    read -p "Do you want to kill this process? (y/n): " confirm
+    if [[ $confirm == "y" ]]; then
+        # Kill the process
+        kill -9 $pid
+        echo "Process with PID $pid killed successfully."
+    else
+        echo "Process not killed."
+    fi
+else
+    echo "No process found running on port $port."
+fi

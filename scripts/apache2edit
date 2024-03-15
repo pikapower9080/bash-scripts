@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Edit the apache2 configuration and restart the service
+
+sudo nano /etc/apache2/apache2.conf
+sudo service apache2 restart

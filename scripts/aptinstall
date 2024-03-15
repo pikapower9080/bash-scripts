@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Shortcut to sudo apt update; sudo apt install (packages)
+
+apt update
+apt install $@

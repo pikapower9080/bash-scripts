@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Runs apt update, apt upgrade and apt dist-upgrade
+
+apt update
+apt upgrade
+apt dist-upgrade

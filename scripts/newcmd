@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Create a new bash script in /usr/local/bin (interactive)
+# Usually requires sudo
+
+echo Enter script name:
+read name
+nano /usr/local/bin/$name
+chmod a+x /usr/local/bin/$name
