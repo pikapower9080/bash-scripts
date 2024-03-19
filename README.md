@@ -37,3 +37,6 @@ Runs `sudo apt update` then `sudo apt upgrade` then `sudo apt dist-upgrade` for 
 
 ### temp
 Shows your system temperature and updates it two times a second
+
+### mcbackup
+Creates a local backup of important minecraft server files in the ./backups directory
