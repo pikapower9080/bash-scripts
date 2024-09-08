@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Edit Caddyfile, then reload caddy
+
+nano /etc/caddy/Caddyfile
+systemctl reload caddy
