@@ -40,3 +40,6 @@ Shows your system temperature and updates it two times a second
 
 ### mcbackup
 Creates a local backup of important minecraft server files in the ./backups directory
+
+### diskspace
+Monitors remaining disk space in real time

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Monitor disk space in real time
+
+watch -n 2 df -h
